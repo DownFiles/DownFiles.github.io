@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DownFiles - Descarga Videos y Música Gratis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Partículas de fondo -->
+    <div class="particles" id="particles"></div>
+
+    <header>
+        <div class="container">
+            <h1 class="logo-animated">📥 DownFiles</h1>
+            <p class="tagline">Descarga videos y música de tus plataformas favoritas</p>
+            <div class="header-wave"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2 class="fade-in-up">Descarga contenido de forma rápida y sencilla</h2>
+                <div class="download-box">
+                    <div class="input-wrapper">
+                        <span class="input-icon">🔗</span>
+                        <input type="text" id="urlInput" placeholder="Pega aquí el enlace del video o música...">
+                    </div>
+                    <div class="select-wrapper">
+                        <span class="select-icon">📁</span>
+                        <select id="formatSelect">
+                            <option value="mp4">Video MP4 - Alta Calidad</option>
+                            <option value="mp3">Audio MP3 - 320kbps</option>
+                            <option value="webm">Video WEBM</option>
+                            <option value="m4a">Audio M4A</option>
+                        </select>
+                    </div>
+                    <button id="downloadBtn" class="btn-download">
+                        <span class="btn-text">Descargar Ahora</span>
+                        <span class="btn-icon">⚡</span>
+                    </button>
+                </div>
+                <div class="info-badges">
+                    <span class="badge">✓ Gratis</span>
+                    <span class="badge">✓ Sin registro</span>
+                    <span class="badge">✓ Ilimitado</span>
+                    <span class="badge">✓ Sin anuncios</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="platforms">
+            <div class="container">
+                <h3 class="section-title">Plataformas Compatibles</h3>
+                <div class="platform-grid">
+                    <div class="platform-card" data-platform="youtube">
+                        <div class="platform-icon">🎥</div>
+                        <h4>YouTube</h4>
+                        <p>Videos y música</p>
+                        <div class="platform-shine"></div>
+                    </div>
+                    <div class="platform-card" data-platform="tiktok">
+                        <div class="platform-icon">📱</div>
+                        <h4>TikTok</h4>
+                        <p>Videos sin marca de agua</p>
+                        <div class="platform-shine"></div>
+                    </div>
+                    <div class="platform-card" data-platform="instagram">
+                        <div class="platform-icon">📷</div>
+                        <h4>Instagram</h4>
+                        <p>Reels, videos y fotos</p>
+                        <div class="platform-shine"></div>
+                    </div>
+                    <div class="platform-card" data-platform="twitter">
+                        <div class="platform-icon">🐦</div>
+                        <h4>Twitter/X</h4>
+                        <p>Videos y GIFs</p>
+                        <div class="platform-shine"></div>
+                    </div>
+                    <div class="platform-card" data-platform="facebook">
+                        <div class="platform-icon">📘</div>
+                        <h4>Facebook</h4>
+                        <p>Videos públicos</p>
+                        <div class="platform-shine"></div>
+                    </div>
+                    <div class="platform-card" data-platform="soundcloud">
+                        <div class="platform-icon">🎵</div>
+                        <h4>SoundCloud</h4>
+                        <p>Música y podcasts</p>
+                        <div class="platform-shine"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-to">
+            <div class="container">
+                <h3 class="section-title">¿Cómo usar DownFiles?</h3>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">
+                            <span>1</span>
+                            <div class="step-circle"></div>
+                        </div>
+                        <div class="step-content">
+                            <h4>Copia el enlace</h4>
+                            <p>Copia la URL del video o música que quieres descargar</p>
+                        </div>
+                        <div class="step-arrow">→</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">
+                            <span>2</span>
+                            <div class="step-circle"></div>
+                        </div>
+                        <div class="step-content">
+                            <h4>Pega en DownFiles</h4>
+                            <p>Pega el enlace en el cuadro de arriba</p>
+                        </div>
+                        <div class="step-arrow">→</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">
+                            <span>3</span>
+                            <div class="step-circle"></div>
+                        </div>
+                        <div class="step-content">
+                            <h4>Selecciona formato</h4>
+                            <p>Elige entre video (MP4) o audio (MP3)</p>
+                        </div>
+                        <div class="step-arrow">→</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">
+                            <span>4</span>
+                            <div class="step-circle"></div>
+                        </div>
+                        <div class="step-content">
+                            <h4>Descarga</h4>
+                            <p>Haz clic en descargar y listo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h3 class="section-title">Características</h3>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon-wrapper">
+                            <span class="feature-icon">⚡</span>
+                        </div>
+                        <h4>Súper Rápido</h4>
+                        <p>Descargas en segundos sin esperas</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon-wrapper">
+                            <span class="feature-icon">🔒</span>
+                        </div>
+                        <h4>100% Seguro</h4>
+                        <p>Sin malware, virus ni software no deseado</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon-wrapper">
+                            <span class="feature-icon">💯</span>
+                        </div>
+                        <h4>Totalmente Gratis</h4>
+                        <p>Sin costos ocultos, gratis para siempre</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon-wrapper">
+                            <span class="feature-icon">📱</span>
+                        </div>
+                        <h4>Multi-dispositivo</h4>
+                        <p>Funciona en PC, móvil y tablet</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon-wrapper">
+                            <span class="feature-icon">🎬</span>
+                        </div>
+                        <h4>Alta Calidad</h4>
+                        <p>Máxima resolución disponible</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon-wrapper">
+                            <span class="feature-icon">🌐</span>
+                        </div>
+                        <h4>Sin Límites</h4>
+                        <p>Descargas ilimitadas sin restricciones</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h3 class="section-title">Preguntas Frecuentes</h3>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <h4>¿Es gratis usar DownFiles? <span class="faq-toggle">+</span></h4>
+                        <p>Sí, DownFiles es completamente gratuito y sin límites de descargas. Nunca te cobraremos nada.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>¿Necesito registrarme? <span class="faq-toggle">+</span></h4>
+                        <p>No, no necesitas crear una cuenta. Solo pega el enlace y descarga inmediatamente.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>¿Qué calidad tienen los videos? <span class="faq-toggle">+</span></h4>
+                        <p>Ofrecemos la mejor calidad disponible del video original, incluyendo HD y Full HD cuando está disponible.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>¿Es legal descargar videos? <span class="faq-toggle">+</span></h4>
+                        <p>Descarga solo contenido del que tengas derechos o permiso del autor. Respeta siempre los derechos de autor.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>¿Funciona en móviles? <span class="faq-toggle">+</span></h4>
+                        <p>Sí, DownFiles está optimizado para funcionar perfectamente en cualquier dispositivo móvil.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>📥 DownFiles</h3>
+                    <p>Tu descargador favorito</p>
+                </div>
+                <div class="footer-stats">
+                    <div class="stat">
+                        <span class="stat-number" id="totalDownloads">1.2M+</span>
+                        <span class="stat-label">Descargas</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500K+</span>
+                        <span class="stat-label">Usuarios</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Disponible</span>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 DownFiles - Todos los derechos reservados</p>
+            <p class="disclaimer">⚠️ Descarga solo contenido que tengas derecho a usar. Respeta los derechos de autor.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
