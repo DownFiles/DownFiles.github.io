@@ -1,57 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DownFiles - Descargas Gratis</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="logo.png" type="image/png" />
 </head>
 <body>
-  <!-- Header -->
   <header class="header">
-    <h1 class="logo">⬇ DownFiles</h1>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#descargas">Descargas</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+    <img src="logo.png" alt="DownFiles Logo" class="logo-img" />
+    <h1 class="logo-text">DownFiles</h1>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="inicio">
-    <h2>Descarga tus videos y música en segundos</h2>
-    <p>Convierte y descarga en MP3, MP4 y más. Gratis y rápido.</p>
-    <form class="download-form">
-      <input type="text" placeholder="Pega aquí tu enlace de video..." required>
-      <select>
-        <option value="mp3">MP3</option>
-        <option value="mp4">MP4</option>
-      </select>
-      <button type="submit">Descargar</button>
-    </form>
-  </section>
+  <main class="main">
+    <section class="hero">
+      <h2>Descarga videos y música al instante</h2>
+      <p>Convierte enlaces en archivos MP3 o MP4 y descárgalos directamente desde MediaFire.</p>
+      <form class="download-form">
+        <input type="text" placeholder="Pega tu enlace aquí..." required />
+        <select>
+          <option value="mp3">MP3</option>
+          <option value="mp4">MP4</option>
+        </select>
+        <button type="submit">⬇ Descargar</button>
+      </form>
+    </section>
 
-  <!-- Features -->
-  <section class="features" id="descargas">
-    <div class="card">
-      <h3>🎵 Música</h3>
-      <p>Convierte tus canciones favoritas a MP3.</p>
-    </div>
-    <div class="card">
-      <h3>🎬 Videos</h3>
-      <p>Descarga videos en alta calidad MP4.</p>
-    </div>
-    <div class="card">
-      <h3>⚡ Rápido</h3>
-      <p>Descargas directas vía MediaFire.</p>
-    </div>
-  </section>
+    <section class="features">
+      <div class="feature">🎵 Música en alta calidad</div>
+      <div class="feature">🎬 Videos HD</div>
+      <div class="feature">⚡ Descargas rápidas</div>
+    </section>
+  </main>
 
-  <!-- Footer -->
-  <footer class="footer" id="contacto">
-    <p>© 2025 DownFiles - Tu sitio de descargas gratuitas</p>
+  <footer class="footer">
+    <p>© 2025 DownFiles. Sitio gratuito y profesional para tus descargas.</p>
   </footer>
 
   <script src="script.js"></script>
