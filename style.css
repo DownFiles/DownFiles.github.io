@@ -13,6 +13,7 @@ body {
   color: var(--text);
 }
 
+/* Header */
 .header {
   display: flex;
   align-items: center;
@@ -33,6 +34,7 @@ body {
   font-weight: bold;
 }
 
+/* Main */
 .main {
   text-align: center;
   padding: 60px 20px;
@@ -48,6 +50,13 @@ body {
   margin-bottom: 30px;
 }
 
+/* Form */
+.download-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .download-form input,
 .download-form select,
 .download-form button {
@@ -56,6 +65,13 @@ body {
   font-size: 18px;
   border-radius: 10px;
   border: 1px solid var(--secondary);
+}
+
+.download-form input:focus,
+.download-form select:focus {
+  outline: none;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 8px var(--accent);
 }
 
 .download-form button {
@@ -71,11 +87,17 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
+.download-form button:active {
+  transform: scale(0.95);
+}
+
+/* Features */
 .features {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .feature {
@@ -84,13 +106,16 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   font-size: 20px;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .feature:hover {
   transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  border: 2px solid var(--accent);
 }
 
+/* Footer */
 .footer {
   background: var(--primary);
   color: white;
@@ -102,4 +127,32 @@ body {
 @keyframes slideDown {
   from { transform: translateY(-100%); }
   to { transform: translateY(0); }
+}
+
+.hero, .features, .footer {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+  .download-form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .download-form input,
+  .download-form select,
+  .download-form button {
+    width: 100%;
+    max-width: 400px;
+  }
 }
