@@ -1,5 +1,3 @@
-# DownFiles.github.io
-Bajar archivos de forma gratuita, sencilla y practica.
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -20,13 +18,14 @@ Bajar archivos de forma gratuita, sencilla y practica.
       <h2>Descarga videos y música al instante</h2>
       <p>Convierte enlaces en archivos MP3 o MP4 y descárgalos directamente desde MediaFire.</p>
       <form class="download-form">
-        <input type="text" placeholder="Pega tu enlace aquí..." required />
-        <select>
+        <input type="url" id="linkInput" placeholder="Pega tu enlace aquí..." required />
+        <select id="formatSelect">
           <option value="mp3">MP3</option>
           <option value="mp4">MP4</option>
         </select>
         <button type="submit">⬇ Descargar</button>
       </form>
+      <p id="statusMsg"></p>
     </section>
 
     <section class="features">
@@ -37,7 +36,7 @@ Bajar archivos de forma gratuita, sencilla y practica.
   </main>
 
   <footer class="footer">
-    <p>© 2025 DownFiles. Sitio gratuito y profesional para tus descargas.</p>
+    <p>© 2026 DownFiles. Sitio gratuito y profesional para tus descargas.</p>
   </footer>
 
   <script src="script.js"></script>
